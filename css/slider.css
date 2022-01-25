@@ -52,7 +52,7 @@
     left: 800%;
 }
 .slider__item:nth-child(10) {
-    left: 9000%;
+    left: 900%;
 }
 
 .btn__container {
@@ -64,8 +64,8 @@
     transform: translateY(-50%);
     z-index: 1000;
 }
-.prew,
-.next {
+.prev-arrow,
+.next-arrow {
     cursor: pointer;
     width: auto;
     padding: 16px;
@@ -76,13 +76,13 @@
     transition: all .6s ease;
 }
 
-.prew:hover,
-.next:hover {
+.prev-arrow:hover,
+.next-arrow:hover {
     background: rgba(0,0,0,.8);
     opacity: .5;
 }
 
-.next {
+.next-arrow {
     right: 0;
 }
 

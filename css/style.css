@@ -260,7 +260,7 @@ a {
         height: 320px;
     }
 }
-.cookies__owerflow {
+.cookie__owerflow {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -268,16 +268,16 @@ a {
     width: 100%;
     background-color: #212834;
 }
-.cookies {
+.cookie__body {
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cookies p {
+.cookie__body p {
     margin-left: 100px;
 }
-.cookies_btn {
+.cookie_btn {
     font-size: 14px;
     margin-right: 25px;
     padding: 15px 40px;
@@ -287,12 +287,12 @@ a {
     transition: all .3s ease;
     cursor: pointer;
 }
-.cookies_btn:hover {
+.cookie_btn:hover {
     color: var(--txt-color);
     background: rgba(87, 87, 87, 0.1);
 }
 @media (max-width: 1241px) {
-    .cookies p {
+    .cookie__body p {
         margin-left: 0;
         margin-right: 50px;
     }

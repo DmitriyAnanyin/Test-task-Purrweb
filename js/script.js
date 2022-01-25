@@ -1,6 +1,5 @@
 
-function setCoockies() {
-    console.log(1)
-    let cockiesBox = document.querySelector('.cookies__owerflow')
+function setCookie() {
+    let cockiesBox = document.querySelector('.cookie__owerflow')
     cockiesBox.style.display = 'none'
 }
