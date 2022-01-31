@@ -11,18 +11,16 @@ let index = 1, offset = (-index) * size
 function position() {
     dotsBox.innerHTML = ''
 
-    slidesBox.style.transform = 'translateX(' + offset + 'px)';
-
     for (let i = 0; i < slides.length; i++) {
         if (i !== 0 && i !== slides.length - 1) {
             if (i === index) {
                 dotsBox.innerHTML += `<span 
                 class="dot active" 
-                id="` + i + `"></span>`
+                id="${i}"></span>`
             } else {
                 dotsBox.innerHTML += `<span 
                 class="dot" 
-                id="` + i + `"></span>`
+                id="${i}"></span>`
             }
         }
     }
@@ -69,20 +67,20 @@ function jump(timer) {
     } else {
         if (offsetClone <= -index * size) {
 
-            if (slides[index].id === "lastClone") {
+            if (slides[index].id === 'lastClone') {
                 index = slides.length - 2
                 offsetClone = (-index -1) * size
             }
             offset = offsetClone + 10
 
         } else {
-            if (slides[index].id === "firstClone") {
+            if (slides[index].id === 'firstClone') {
                 index = 1
                 offsetClone = 0
             } 
             offset = offsetClone - 10
         }
-            slidesBox.style.transform = 'translateX(' + offset + 'px)';
+            slidesBox.style.left = `${offset}px`
             position()
     }    
 
